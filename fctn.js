@@ -7,16 +7,16 @@ function toggleDetails() {
   }
 }
 
-document.getElementById("header").innerHTML =
+// document.getElementById("header").innerHTML =
 
-    "<div class='container'>"
+//     "<div class='container'>"
 
-    + "<div class='all'>"
-            + "<button onclick='location.href = `accueil.html`;'> Accueil </button>"
-            + "<button onclick='location.href = `projets.html`;'> Projets </button>"
-            + "<button onclick='location.href = `contacts.html` ;'> Contacts CV </button>"
-        + "</div>"
+//     + "<div class='all'>"
+//             + "<button onclick='location.href = `accueil.html`;'> Accueil </button>"
+//             + "<button onclick='location.href = `projets.html`;'> Projets </button>"
+//             + "<button onclick='location.href = `contacts.html` ;'> Contacts CV </button>"
+//         + "</div>"
      
-    + "</div>"
-    + "<hr class = 'hrHeader' />"
-;
+//     + "</div>"
+//     + "<hr class = 'hrHeader' />"
+// ;
