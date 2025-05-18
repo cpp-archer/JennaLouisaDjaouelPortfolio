@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Projets Universitaires</title>
     <script src="fctn.js" defer></script>
+    <link rel="stylesheet" href="projetsUni.css">
 </head>
 <body>
     
@@ -17,15 +18,17 @@
         <p>Handycapy est un projet de développement d'un jeu video sur le theme du handicap , realisé dans une demarche eco responsable</p>
         <p>Il a été réalisé dans le cadre d'un projet universitaire important lors de ma 2eme année de BUT informatique graphique</p>
 
-        <button onclick="toggleDetails()">Details</button>
-        <div id="details" style="display: none;">
+<button onclick="toggleDetails(this)">Details</button>
+
+        <div class="details" style="display: none;">
+
             <h2>Details</h2>
                 <p>Nombre de personnes travaillatn sur le projet : 4 </p>
                 <p>Durée du projet : 120 heures</p>
                 <p>Plateform et langage : Unity, C#</p>
         </div> 
 
-        <button onclick="location.href='/handicapy'">Voir le projet</button>
+        <button onclick="location.href='handicapy.html'">Voir le projet</button>
 
     </div>
     
@@ -35,7 +38,8 @@
         <p>MLK est une visite d'un musée virtuel developpé sur Unreal Engine </p>
         <p>Il a été réalisé dans le cadre d'un projet universitaire important lors de ma 1eme année de BUT informatique graphique</p>
 
-        <button onclick="toggleDetails()">Details</button>
+<button onclick="toggleDetails(this)">Details</button>
+
         <div id="details" style="display: none;">
             <h2>Details</h2>
                 <p>Nombre de personnes travaillatn sur le projet : 7 </p>
@@ -43,7 +47,7 @@
                 <p>Plateform et langage : Unreal Engine, Blueprints</p>
         </div> 
 
-        <button onclick="location.href='/mlk'">Voir le projet</button>
+        <button onclick="location.href='mlk.html'">Voir le projet</button>
 
     </div>
 
