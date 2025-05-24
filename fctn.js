@@ -8,6 +8,7 @@ function toggleDetails(button) {
 }
 
 
+
 document.getElementById("header").innerHTML =
 
     "<div class='container'>"

@@ -1,0 +1,46 @@
+.competences {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px; 
+    margin-top: 20px;
+}
+
+
+html {
+    scroll-behavior: smooth;
+}
+
+body, html {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    font-family: Arial, sans-serif;
+    background-image: linear-gradient(to bottom right, rgba(1, 75, 15, 0.899), rgba(71, 3, 120, 0.729));
+    color: white;
+}
+
+.intro {
+    display: flex;
+    justify-content: center; 
+    flex-wrap: wrap; 
+    gap: 20px; }
+
+
+.pourquoi, .qui{
+    background: rgba(13, 0, 0, 0.436);
+    margin: 20px;
+    padding-left: 50px;
+    padding: 20px;
+    border-radius: 10px;
+    border: solid;
+    max-width: 400px;
+    width: 100%;
+}
+
+.qui:hover, .pourquoi:hover {
+    cursor: pointer;
+    transform: scale(1.05);
+    transition: all 0.3s ease;
+}
+
+.nom{}
