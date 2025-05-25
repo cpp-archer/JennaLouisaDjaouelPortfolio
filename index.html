@@ -13,7 +13,8 @@
 <body>
 
     <div id="header"></div>
-
+    
+ <div class = showoff>
     <div class = "intro">
 
             <h1>Bienvenue sur mon portfolio ! </h1>
@@ -38,17 +39,15 @@
 
     </div>
  
-    <div class = showoff>
+   
 
-        <h2> Competences </h2>
         <div class = "competences">
 
             <div class = "Langages">
                 <h3>Langages de programmation</h3>
+                <button class="btn" onclick="toggleDetails(this)">Derouler la liste</button>
                 <div id="details" style="display: none;">
-                    <button onclick="toggleDetails(this)">Derouler la liste</button>
-            
-                    <ul>
+                    <ul id="liste">
                         <li>HTML</li>
                         <li>CSS</li>
                         <li>JavaScript</li>
@@ -64,7 +63,7 @@
                 <h3>Logiciels</h3>
                 <button class="btn" onclick="toggleDetails(this)">Derouler la liste</button>
                 <div id="details" style="display: none;">
-                    <ul>
+                    <ul id="liste">
                         <li>Unity</li>
                         <li>Unreal Engine</li>
                         <li>Blender</li>
@@ -78,30 +77,33 @@
 
             <div class = "softskills">
                 <h3>Soft Skills</h3>
-                <button onclick="toggleDetails(this)">Derouler la liste</button>
+                <button class="btn"onclick="toggleDetails(this)">Derouler la liste</button>
                 <div id="details" style="display: none;">
-                    <ul>
-                        <li> Teamwork et esprit d'équipe </li>
-                        <li> Communication </li>
-                        <li> Adaptabilité et flexibilité </li>
-                        <li> Gestion du temps et des priorités </li>
-                        <li> Esprit d'analyse et de synthèse </li>
-
-                    </ul>   
+                    
+                        <ul id="liste">
+                            <li> Teamwork et esprit d'équipe </li>
+                            <li> Communication </li>
+                            <li> Adaptabilité et flexibilité </li>
+                            <li> Gestion du temps et des priorités </li>
+                            <li> Esprit d'analyse et de synthèse </li>
+                        </ul>   
+                    
                 </div>
             </div>
 
             <div class = "comptech">
                 <h3> Competences techniques </h3>
-                <button onclick="toggleDetails(this)">Derouler la liste</button>
+                <button class="btn" onclick="toggleDetails(this)">Derouler la liste</button>
                 <div id="details" style="display: none;">
-                    <ul>    
-                        <li> Conception d'interfaces interactives et intuitives</li>
-                        <li> Conception d'interactions et de zones d'interactions</li>
-                        <li> Gestion de base de donnee</li>
-                        <li> Etablir une liaison backend entre bdd et actions</li>
-                        <li> Conception de jeux videos </li>
-                    </ul>
+                    
+                        <ul id="liste">    
+                            <li> Conception d'interfaces interactives et intuitives</li>
+                            <li> Conception d'interactions et de zones d'interactions</li>
+                            <li> Gestion de base de donnee</li>
+                            <li> Etablir une liaison backend entre bdd et actions</li>
+                            <li> Conception de jeux videos </li>
+                        </ul>
+                    
                 </div>
             </div>
         </div>

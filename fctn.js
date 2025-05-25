@@ -22,3 +22,4 @@ document.getElementById("header").innerHTML =
     + "</div>"
     + "<hr class = 'hrHeader' />"
 ;
+
