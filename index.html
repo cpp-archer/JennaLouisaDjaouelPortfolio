@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Accueil</title>
+    <link rel="stylesheet" href="index.css">
     <script src="fctn.js" defer></script>
 
 </head>
@@ -11,10 +12,103 @@
 
 <body>
 
-    <div id="header">
-        <h1>Bienvenue sur mon site</h1>
-        <p>Je suis Jenna Djaouel, étudiante en BUT Informatique Graphique</p>
-        <p>Voici mes projets et mes contacts</p></div>
+    <div id="header"></div>
+    
+ <div class = showoff>
+    <div class = "intro">
+
+            <h1>Bienvenue sur mon portfolio ! </h1>
+            <p> Jenna-Louisa Djaouel, étudiante de 2ème année d'un BUT d'Informatique Graphique</p> <br>
+
+
+        <div class="qui">
+            <h2> Qu'est ce que j'aime dans l'informatique et la programmation ?</h2>
+            <p>J'aime le développement de jeux vidéo et la création d'expériences immersives et interactives.</p>
+            <p> Je suis également interessée par le developpement de logiciels et d'applications</p> <br>
+        </div>
+
+        <div class="pourquoi">
+            <h2> Mais pourquoi</h2>
+            <p>J'ai toujours voulu découvrir ce qu'il se passait derrière les ecrans lorsqu'on interagissait avec</p>
+            <p> premier declic : pokemon heart gold sur la DS lite</p>
+        </div>
+
+        <p>Je suis à la recherche d'une alternance dans le developpement de jeux video ou dans le developpement web ou  </p>
+
+        <p>Voici mes projets et mes contacts</p>
+
+    </div>
+ 
+   
+
+        <div class = "competences">
+
+            <div class = "Langages">
+                <h3>Langages de programmation</h3>
+                <button class="btn" onclick="toggleDetails(this)">Derouler la liste</button>
+                <div id="details" style="display: none;">
+                    <ul id="liste">
+                        <li>HTML</li>
+                        <li>CSS</li>
+                        <li>JavaScript</li>
+                        <li>C#</li>
+                        <li>C++</li>
+                        <li>Python</li>
+                        <li>Kotlin</li>
+                    </ul>   
+                </div>
+            </div>
+
+            <div class = "Logiciels">
+                <h3>Logiciels</h3>
+                <button class="btn" onclick="toggleDetails(this)">Derouler la liste</button>
+                <div id="details" style="display: none;">
+                    <ul id="liste">
+                        <li>Unity</li>
+                        <li>Unreal Engine</li>
+                        <li>Blender</li>
+                        <li>Visual Studio</li>
+                        <li>Visual Studio Code</li>
+                        <li>Android studio</li>       
+                    </ul>
+                </div> 
+            </div>
+
+
+            <div class = "softskills">
+                <h3>Soft Skills</h3>
+                <button class="btn"onclick="toggleDetails(this)">Derouler la liste</button>
+                <div id="details" style="display: none;">
+                    
+                        <ul id="liste">
+                            <li> Teamwork et esprit d'équipe </li>
+                            <li> Communication </li>
+                            <li> Adaptabilité et flexibilité </li>
+                            <li> Gestion du temps et des priorités </li>
+                            <li> Esprit d'analyse et de synthèse </li>
+                        </ul>   
+                    
+                </div>
+            </div>
+
+            <div class = "comptech">
+                <h3> Competences techniques </h3>
+                <button class="btn" onclick="toggleDetails(this)">Derouler la liste</button>
+                <div id="details" style="display: none;">
+                    
+                        <ul id="liste">    
+                            <li> Conception d'interfaces interactives et intuitives</li>
+                            <li> Conception d'interactions et de zones d'interactions</li>
+                            <li> Gestion de base de donnee</li>
+                            <li> Etablir une liaison backend entre bdd et actions</li>
+                            <li> Conception de jeux videos </li>
+                        </ul>
+                    
+                </div>
+            </div>
+        </div>
+    </div>
+
 
 </body>
 </html>
