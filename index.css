@@ -14,10 +14,15 @@ body, html {
 }
 .competences {
     display: flex;
-    /*flex-wrap: wrap;*/
+    flex-wrap: wrap;
     gap: 20px; 
     margin-top: 20px;
     background-color: #30103e5f;
+     justify-content: center;
+    position: relative;
+
+
+    align-content: center;
 }
 
 
@@ -45,25 +50,6 @@ body, html {
     transition: all 0.3s ease;
 }
 
-.Logiciels, .comptech, .softskills, .Langages{
-
-    background: rgba(13, 0, 0, 0.436);
-    margin: 20px;
-
-    padding: 20px;
-    border-radius: 10px;
-    border: solid;
-    max-width: 400px;
-    /*width: 100%;*/
-    
-    columns: auto;
-}
-
-.Logiciels:hover, .comptech:hover, .softskills:hover,.Langages:hover {
-    cursor: pointer;
-    transform: scale(1.05);
-    transition: all 0.3s ease;
-}
 
 .showoff{
     display: flex;
@@ -98,3 +84,66 @@ body, html {
     -moz-box-shadow: 1px 1px 4px #777777;
 }
 
+
+/* #logo {
+    width: 20px;
+    height: 20px;
+} */
+
+/* #angular{
+    width: 50px;
+    height: 20px;
+} */
+
+/* en ligne mais non en fait */
+/* .Logiciels img, .Langages img{
+    display:flex;
+    flex-wrap:wrap;
+    justify-content: center;
+    align-items: center;
+    gap:20px;
+    max-width: 100px;
+    height: 30px;
+    object-fit: contain;
+    flex-shrink: 0;
+    margin: 20px auto;
+} */
+
+.Langages img, .Logiciels img {
+    width: 100px;  
+    height: 60px;
+    margin: 10px; 
+    object-fit: contain;
+}
+
+
+.Logiciels, .comptech, .softskills, .Langages{
+
+    background: rgba(13, 0, 0, 0.436);
+    margin: 20px;
+
+    padding: 20px;
+    border-radius: 10px;
+    border: solid;
+    max-width: 400px;
+    /*width: 100%;*/
+    
+    columns: auto;
+}
+
+.Logiciels:hover, .comptech:hover, .softskills:hover,.Langages:hover {
+    cursor: pointer;
+    transform: scale(1.05);
+    transition: all 0.3s ease;
+}
+
+.Langages, .Logiciels, .softskills, .comptech {
+    display: flex;
+    flex-direction: column;
+    align-items: center;    
+    justify-content: center; 
+    text-align: center;     
+    flex: 1 1 40%;
+    max-width: 400px;
+    margin-top: 0; 
+}
