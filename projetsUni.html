@@ -1,173 +1,132 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="fr">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Projets Universitaires</title>
-    <script src="fctn.js" defer></script>
     <link rel="stylesheet" href="projetsUni.css">
-     <!-- <div id="header"></div> -->
+    <script src="fctn.js" defer></script>
 </head>
 
-<header> <button class="btn" onclick="location.href = 'index.html'">Accueil</button>
+<body>
+    <header>
+        <button class="btn" onclick="location.href = 'index.html'">Accueil</button>
         <button class="btn" onclick="location.href = 'projets.html'">Projets</button>
         <button class="btn" onclick="location.href = 'contacts.html'">Contacts CV</button>
-</header>
-<body>
-    
-<nav style="padding: 1rem;">
-        <a href="#jeux-video">🎮 Jeux Vidéo</a>
-    <a href="#apps-web">Projets Web & Apps</a> |
+    </header>
 
-  </nav>
-
-    <section id="jeux-video">
-      <h2>🎮 Projets de Jeux Vidéo</h2>
-<div class = "ProjetsUni">
-
-    <div class="jeux handicapy">  
-        <h1>Handycapy</h1>
-        <p>Handycapy est un projet de développement d'un jeu video sur le theme du handicap , realisé dans une demarche eco responsable</p>
-        <p>Il a été réalisé dans le cadre d'un projet universitaire important lors de ma 2eme année de BUT informatique graphique</p>
-
-        <button onclick="toggleDetails(this)">Details</button>
-        <div class="details" style="display: none;">
-            <h2>Details</h2>
-                <p>Nombre de personnes travaillatn sur le projet : 4 </p>
-                <p>Durée du projet : 120 heures</p>
-                <p>Plateform et langage : Unity, C#</p>
-        </div> 
-
-        <button onclick="location.href='handicapy.html'">Voir le projet</button>
+    <div class="intro">
+        <h1>Projets Universitaires</h1>
+        <p>Voici quelques projets réalisés dans le cadre de mes études en BUT Informatique Graphique.</p>
     </div>
 
-<!--------------------------------------------------------------------------->
+    <nav class="nav-links">
+        <a href="#jeux"> Jeux Vidéo</a>
+        <a href="#appweb"> Applications et web</a>
+    </nav>
 
-    <div class="jeux mlk">
+
+    <section class="project-section" id="jeux">
+        <h2> Projets de Jeux Vidéo</h2>
+        <div class="projets-container">
+
+            <div class="card">
+                <h3>Handycapy</h3>
+                <p>Jeu vidéo sur le thème du handicap, réalisé avec Unity et C#.</p>
+                <button class="btn" onclick="toggleDetails(this)">Détails</button>
+                <div class="details" style="display: none;">
+                    <p><strong>Équipe :</strong> 4 personnes</p>
+                    <p><strong>Durée :</strong> 120h</p>
+                    <p><strong>Technos :</strong> Unity, C#</p>
+                </div>
+                <button class="btn" onclick="location.href='handicapy.html'">Voir le projet</button>
+            </div>
+
+            
+            <div class="card">
+                <h3>MLK</h3>
+                <p>Musée virtuel en hommage à Martin Luther King, réalisé avec Unreal Engine en Blueprints.</p>
+                <button class="btn" onclick="toggleDetails(this)">Détails</button>
+                <div class="details" style="display: none;">
+                    <p><strong>Équipe :</strong> 7 personnes</p>
+                    <p><strong>Durée :</strong> 120h</p>
+                    <p><strong>Technos :</strong> Unreal Engine, Blueprints</p>
+                </div>
+                <button class="btn" onclick="location.href='mlk.html'">Voir le projet</button>
+            </div>
+
+            <div class="card">
+                <h3>Statue Builder</h3>
+                <p>Jeu en réalité virtuelle de construction de statue, développé sous Unity en 2ᵉ année.</p>
+                <button class="btn" onclick="toggleDetails(this)">Détails</button>
+                <div class="details" style="display: none;">
+                    <p><strong>Équipe :</strong> 3 personnes</p>
+                    <p><strong>Durée :</strong> 120h</p>
+                    <p><strong>Technos :</strong> Unity, C#</p>
+                </div>
+                <button class="btn" onclick="location.href='statueBuilder.html'">Voir le projet</button>
+            </div>
+
+       
+            <div class="card">
+                <h3>Road Esquive</h3>
+                <p>Petit jeu d’esquive de véhicules, développé avec Unity en C#.</p>
+                <button class="btn" onclick="toggleDetails(this)">Détails</button>
+                <div class="details" style="display: none;">
+                    <p><strong>Équipe :</strong> 6 personnes</p>
+                    <p><strong>Durée :</strong> 120h</p>
+                    <p><strong>Technos :</strong> Unity, C#</p>
+                </div>
+                <button class="btn" onclick="location.href='route.html'">Voir le projet</button>
+            </div>
+
+        </div>
+    </section>
+
+    <section class="project-section" id="appweb">
+        <h2> Projets Web & Applications</h2>
+        <div class="projets-container">
+
+       
+            <div class="card">
+                <h3>Climat APP</h3>
+                <p>Interface interactive illustrant les effets du changement climatique.</p>
+                <button class="btn" onclick="toggleDetails(this)">Détails</button>
+                <div class="details" style="display: none;">
+                    <p><strong>Équipe :</strong> 7 personnes</p>
+                    <p><strong>Durée :</strong> 120h</p>
+                    <p><strong>Technos :</strong> Web, JavaScript</p>
+                </div>
+                <button class="btn" onclick="location.href='climatApp.html'">Voir le projet</button>
+            </div>
+
         
-        <h1>MLK</h1>
-            <p>MLK est une visite d'un musée virtuel developpé sur Unreal Engine </p>
-            <p>Il a été réalisé dans le cadre d'un projet universitaire important lors de ma 1eme année de BUT informatique graphique</p>
-
-        <button onclick="toggleDetails(this)">Details</button>
-
-        <div id="details" style="display: none;">
-            <h2>Details</h2>
-                <p>Nombre de personnes travaillatn sur le projet : 7 </p>
-                <p>Durée du projet : 120 heures</p>
-                <p>Plateform et langage : Unreal Engine, Blueprints</p>
-        </div> 
-
-        <button onclick="location.href='mlk.html'">Voir le projet</button>
-
-    </div>
+            <div class="card">
+                <h3>Maillage Procédural Construct</h3>
+                <p>Prototype d’environnement de construction à base de maillage procédural en 3D.</p>
+                <button class="btn" onclick="toggleDetails(this)">Détails</button>
+                <div class="details" style="display: none;">
+                    <p><strong>Équipe :</strong> 3 personnes</p>
+                    <p><strong>Durée :</strong> 120h</p>
+                    <p><strong>Technos :</strong> Unity, C#</p>
+                </div>
+                <button class="btn" onclick="location.href='mesh.html'">Voir le projet</button>
+            </div>
 
 
-<!--------------------------------------------------------------------------->
+            <div class="card">
+                <h3>Vapeur</h3>
+                <p>Application web de gestion de bibliothèque de jeux vidéo (type Steam).</p>
+                <button class="btn" onclick="toggleDetails(this)">Détails</button>
+                <div class="details" style="display: none;">
+                    <p><strong>Équipe :</strong> 3 personnes</p>
+                    <p><strong>Durée :</strong> 120h</p>
+                    <p><strong>Technos :</strong> Node.js, Express, Prisma, Handlebars</p>
+                </div>
+                <button class="btn" onclick="location.href='vapeur.html'">Voir le projet</button>
+            </div>
 
- <div class="jeux VR">
-        
-        <h1>Statue Builder</h1>
-            <p>Statue Builder est un jeu VR realisé sur Unity </p>
-            <p>Il a été réalisé dans le cadre d'un projet universitaire lors de ma 2eme année de BUT informatique graphique</p>
-
-        <button onclick="toggleDetails(this)">Details</button>
-
-        <div id="details" style="display: none;">
-            <h2>Details</h2>
-                <p>Nombre de personnes travaillatn sur le projet : 3 </p>
-                <p>Durée du projet : 120 heures</p>
-                <p>Plateform et langage : Unity, C#</p>
-        </div> 
-
-        <button onclick="location.href='statueBuilder.html'">Voir le projet</button>
-
-    </div>
-
-
-<!--------------------------------------------------------------------------->
- <div class="jeux Route">
-        
-        <h1>RoadEsquive</h1>
-            <p>Road esquive est un jeu realisé sur Unity </p>
-            <p>Il a été réalisé dans le cadre d'un projet universitaire lors de ma 2eme année de BUT informatique graphique</p>
-
-        <button onclick="toggleDetails(this)">Details</button>
-
-        <div id="details" style="display: none;">
-            <h2>Details</h2>
-                <p>Nombre de personnes travaillatn sur le projet : 6 </p>
-                <p>Durée du projet : 120 heures</p>
-                <p>Plateform et langage : Unity, C#</p>
-        </div> 
-
-        <button onclick="location.href='route.html'">Voir le projet</button>
-
-    </div>
-</div></section>
-<!--------------------------------------------------------------------------->
-
-  <section id="appWeb">
-      <h2>Projets Web & Applications</h2>
-    <div class="climatApp">
-        
-        <h1>Climat APP</h1>
-            <p>Developpement d'une interafece interactive sur les changements climatiques d'une zone meteorologiques données au fil des années </p>
-            <p>Il a été réalisé dans le cadre d'un projet universitaire important lors de ma 1ere année de BUT informatique graphique</p>
-
-        <button onclick="toggleDetails(this)">Details</button>
-
-        <div id="details" style="display: none;">
-            <h2>Details</h2>
-                <p>Nombre de personnes travaillatn sur le projet : 7 </p>
-                <p>Durée du projet : 120 heures</p>
-                <p>Plateform et langage : Unreal Engine, Blueprints</p>
-        </div> 
-
-        <button onclick="location.href='climatApp.html'">Voir le projet</button>
-
-    </div>
-<!--------------------------------------------------------------------------->
- <div class="mesh">
-        
-        <h1>Maillage Procedural Construct </h1>
-            <p>Mesh est un environnement de construction en maillage procedural </p>
-            <p>Il a été réalisé dans le cadre d'un projet universitaire lors de ma 2eme année de BUT informatique graphique</p>
-
-        <button onclick="toggleDetails(this)">Details</button>
-
-        <div id="details" style="display: none;">
-            <h2>Details</h2>
-                <p>Nombre de personnes travaillatn sur le projet : 3 </p>
-                <p>Durée du projet : 120 heures</p>
-                <p>Plateform et langage : Unity, C#</p>
-        </div> 
-
-        <button onclick="location.href='mesh.html'">Voir le projet</button>
-
-    </div>
-
-<!--------------------------------------------------------------------------->
- <div class="vapeur">
-        
-        <h1>Vapeur</h1>
-            <p>Vapeur est un petit projet de developpement web en javascript nodejs express prisma et hbs dans le but de gerer une collection de jeux videos</p>
-            <p>Il a été réalisé dans le cadre d'un projet universitaire lors de ma 2eme année de BUT informatique graphique</p>
-
-        <button onclick="toggleDetails(this)">Details</button>
-
-        <div id="details" style="display: none;">
-            <h2>Details</h2>
-                <p>Nombre de personnes travaillatn sur le projet : 3 </p>
-                <p>Durée du projet : 120 heures</p>
-                <p>Plateform et langage : VSCode JavaScript HBS Prisma Nodejs Express</p>
-        </div> 
-
-        <button onclick="location.href='vapeur.html'">Voir le projet</button>
-
-    </div>
-</section>
-<!--------------------------------------------------------------------------->
-
+        </div>
+    </section>
 </body>
 </html>
